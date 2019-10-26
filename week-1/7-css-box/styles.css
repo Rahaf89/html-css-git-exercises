@@ -1,6 +1,25 @@
 /* Try different box model properties below */
+
 .pages__page {
   border: 1px solid #4491db;
   border-radius: 4px;
   background: #fff;
+}
+
+.pages__page {
+  border: 2px solid rgb(12, 89, 206);
+  height: auto;
+  width: 5px;
+  margin: 20px;
+  padding: 5px;
+}
+
+.pages__showing {
+  color: green;
+  line-height: 0px;
+}
+
+.pages {
+  background: #4491db;
+  border: 4px solid #4491db;
 }

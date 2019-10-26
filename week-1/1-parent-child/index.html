@@ -1,35 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>1. Parent-Child Relationships - HTML, CSS and Git Exercises</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="/css/week1.css" />
-    <link rel="stylesheet" href="/css/message-child-selectors.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
   </head>
 
   <body>
-    <div class="site-wrapper">
-      <div class="site-header">
-        <div class="site-header__title">Messages</div>
+    <form action="/readform" method="GET" class="col">
+      <div class="form-group">
+        <label for="First_Name">First Name</label>
+        <input
+          placeholder="first name"
+          type="text"
+          class="form-control"
+          name="First_Name"
+          id="First_Name"
+        />
       </div>
-      <div class="messages">
-        <div class="message">
-          <div class="message__author">Anthony</div>
-          <p class="message__content">
-            Who is available to meet this week to work on our group project?
-          </p>
-          <span class="message__time">6:48pm</span>
+      <div class="form-group">
+        <label for="Last_Name">Last Name</label>
+        <input
+          placeholder="last name"
+          type="text"
+          class="form-control"
+          name="Last_Name"
+          id="Last_Name"
+        />
+      </div>
+      <div class="form-group">
+        <label for="User_Name">User Name</label>
+        <input type="text" class="form-control" name="User_Name" id="User_Name" />
+      </div>
+      <div class="form-row">
+        <div class="form-group col-12 col-md-4">
+          <label for="Password">Password</label>
+          <input type="password" class="form-control" name="Password" id="Password" />
         </div>
-        <div class="message">
-          <div class="message__author">Habiba</div>
-          <p class="message__content">
-            I can meet on Tuesday and Wednesday after 4.
-          </p>
-          <span class="message__time">7:00pm</span>
+        <div class="form-group col-12  col-md-4">
+          <label for="E_Mail">E_Mail</label>
+          <input type="email" class="form-control" name="E_Mail" id="E_Mail" required />
+        </div>
+        <div class="form-group col-12  col-md-4">
+          <label for="TAC">TAC</label>
+          <input type="checkbox" name="TAC" id="TAC" />
         </div>
       </div>
-    </div>
+
+      <button type="submit">submit</button>
+    </form>
   </body>
 </html>
